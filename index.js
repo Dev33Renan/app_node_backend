@@ -11,7 +11,7 @@ const port = 3000;
 const musica = require('./routers/musicas.routers')
 app.use('/musicas',musica);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.info('App inicializado');
   })
 
